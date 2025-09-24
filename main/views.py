@@ -14,6 +14,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from main.forms import NewsForm
 from main.models import News
 
+
 @login_required(login_url='/login')
 def show_main(request):
     filter_type = request.GET.get("filter", "all")  # default 'all'
